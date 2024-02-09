@@ -24,7 +24,8 @@ db.once("open", () => {
 // Define a patient schema
 const patientSchema = new mongoose.Schema({
   serialNo: String,
-  date: Date,
+  date: String,
+  time:String,
   patientName: String,
   age: String,
   relationship: String,
